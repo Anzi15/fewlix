@@ -4,7 +4,6 @@ import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 import Paragraph from "./ui/Paragraph";
-import Button from "./ui/Button";
 import Statics from "./Statics";
 
 const words = [
@@ -123,7 +122,7 @@ const HeroSection = () => {
   </div>
 
   <div className="flex gap-4 flex-wrap py-4">
-    <Button text={"Contact Us"} />
+    <button text={"Contact Us"} > GET STARTED </button>
   </div>
 </div>
 

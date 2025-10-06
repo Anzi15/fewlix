@@ -128,7 +128,7 @@ export default function Footer4Col() {
             </div>
 
             <div className="text-center sm:text-left">
-              <p className="text-lg font-medium text-white">Contact Us</p>
+              <p className="text-lg font-medium text-white">GETSTARTED</p>
               <ul className="mt-8 space-y-4 text-sm">
                 {contactInfo.map(({ icon: Icon, text }, index) => (
                   <li key={index}>

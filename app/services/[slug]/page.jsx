@@ -1,7 +1,9 @@
+import { ServiceBody } from '../../components/service/PageBody';
 import TwoRowCarousel from '../../components/ImageMarquee';
 import { HeroSection } from '../../components/service/HeroSection';
 import services from '../../data/services.json'; // Adjust path as needed
 import { notFound } from 'next/navigation';
+import { Marquee } from '../../components/LogoMarquee';
 
 export default function ServicePage({ params }) {
     const { slug } = params;
@@ -15,13 +17,10 @@ export default function ServicePage({ params }) {
 
     return (
         <main>
-            <HeroSection tagline={service.name} image={{src: service.image, alt:service.name}} description={service.subHeading} features={service.points} heading={service.servicePageHeading}/>
+            <HeroSection tagline={service?.name} image={{src: service?.image, alt:service?.name}} description={service?.subHeading} features={service?.points} heading={service?.servicePageHeading}/>
 
-            <TwoRowCarousel
-  images={service.images}
-  speed={25}   // slower loop
-  size={400}   // smaller squares
-/>
+
+<ServiceBody service={service}/>
 
         </main>
     );

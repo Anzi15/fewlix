@@ -111,7 +111,7 @@ export default function TestimonialsShowcase() {
             <span className="text-sm font-medium text-gray-700">Customer Stories</span>
             <div className="w-2 h-2 bg-black rounded-full"></div>
           </div>
-          <h2 className="text-xl md:text-5xl font-bold text-gray-900 leading-tight">
+          <h2 className="text-xl md:text-5xl font-extrabold text-gray-900 leading-tight">
             More Impactful Projects Delivered
             <br />
             Than Other Agencies Have Clients.

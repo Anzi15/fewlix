@@ -9,7 +9,7 @@ import Image from "next/image";
 const navigationItems = [
   { name: "Home", href: "/" },
   { name: "About", href: "/about" },
-  { name: "Services", href: "/services" },
+  { name: "Services", href: "/#services" },
   { name: "Projects", href: "/projects" },
   { name: "Career", href: "/career" },
 ];
@@ -68,7 +68,7 @@ export default function Header() {
                 href="/contact"
                 className="rounded-full border-2 border-gray-300 text-gray-700 bg-transparent px-4 py-2 text-sm lg:text-base transition-all hover:border-green-400 hover:text-green-500"
               >
-                Contact Us
+                GET STARTED
               </Link>
               <button
                 className="rounded-full bg-green-400 hover:bg-green-500 text-black p-3 lg:p-4 rotate-[-45deg] group-hover:rotate-0 transition-transform hover:scale-105 hover:shadow-lg"
@@ -133,7 +133,7 @@ export default function Header() {
               onClick={() => setIsOpen(false)}
               className="flex-1 rounded-full border-2 border-gray-300 text-gray-700 bg-transparent px-4 py-2 text-center text-base transition-all hover:border-green-400 hover:text-green-500"
             >
-              Contact Us
+             GET STARTED
             </Link>
             <button className="rounded-full bg-green-400 hover:bg-green-500 hover:scale-105 hover:shadow-lg text-black p-3 rotate-[-45deg] transition-transform">
               <ArrowRight className="h-5 w-5 font-extrabold" />

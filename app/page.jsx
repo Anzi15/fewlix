@@ -14,7 +14,9 @@ export default function Home() {
 
     <section className="md:px-4 my-4">
 
+    <div id="services">
     <ServicesSection />
+    </div>
     <TestimonialsShowcase />
     <Marquee />
     </section>
